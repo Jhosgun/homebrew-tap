@@ -8,6 +8,7 @@ Barra de menú para macOS con el consumo y la cuota de tus herramientas de IA.
 Código y documentación: [Jhosgun/tokenbar](https://github.com/Jhosgun/tokenbar).
 
 ```sh
+brew trust jhosgun/tap
 brew install --cask jhosgun/tap/tokenbar
 ```
 
@@ -17,5 +18,4 @@ La app no está notarizada por Apple, así que macOS la bloquea la primera vez. 
 xattr -dr com.apple.quarantine "/Applications/TokenBar.app"
 ```
 
-o instálala sin cuarentena desde el principio con
-`brew install --cask --no-quarantine jhosgun/tap/tokenbar`.
+En Homebrew 7 ya no existe `--no-quarantine`, así que esa es la vía.

@@ -17,13 +17,11 @@ cask "tokenbar" do
 
   caveats <<~EOS
     TokenBar no está firmada con una cuenta de Apple Developer, así que macOS la bloquea
-    la primera vez. Si al abrirla ves el aviso, cualquiera de estas dos sirve:
+    la primera vez que la abres. Si ves ese aviso, quítale la marca de cuarentena:
 
       xattr -dr com.apple.quarantine "/Applications/TokenBar.app"
 
-    o instalarla sin cuarentena desde el principio:
-
-      brew install --cask --no-quarantine jhosgun/tap/tokenbar
+    (En Homebrew 7 ya no existe `--no-quarantine`.)
 
     Si prefieres no confiar en el binario, el código está en el repo y se compila con
     `make install`.
