@@ -1,5 +1,3 @@
-# Fórmula del cask para el tap Jhosgun/homebrew-tap.
-# Copiar a ese repo como Casks/tokenbar.rb y actualizar version y sha256 en cada release.
 cask "tokenbar" do
   version "1.0.2"
   sha256 "2e461ca45053b2f60f298c5f5275252684648de15491598d30a0446753094d0e"
